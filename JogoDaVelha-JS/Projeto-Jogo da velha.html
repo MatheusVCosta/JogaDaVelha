@@ -1,0 +1,159 @@
+<html> <!--INNER HTML-->
+	<head>
+		<title>Jogo da Velha</title>
+		<script src="script-jogoDaVelha.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+		<link rel="icon" href="imagens/x.png" type="image/icon"/>
+		<meta charset="utf-8"/>
+	</head>
+	<body >
+	
+		<table width="900" height="700" align="center" class="principal" id="banner"> <!--Tabela principal-->
+			<tr height="10%">	
+				<td valign="top">	
+					<table width="100%" height="100%"> <!---Tabela do titulo-->
+						<tr height="100%">
+							<td align="center" width="33%">
+								<label id="mostrarX"  class="font-Mostrador"></label>
+							</td>
+							<td align="center" id="font-banner" width="33%">
+								JOGO DA VELHA
+							</td>
+							<td align="center" width="33%">
+								<label id="mostrarO" class="font-Mostrador"></label>
+							</td>
+						</tr>
+					</table> <!--Fim da tabela principal-->
+				</td>
+			</tr>
+			<tr height="15%">
+				<td width="100%" valign="top">
+					<table class="menu" width="100%" height="100%" >  <!--Tabela do menu-->
+						<tr>
+							<td width="33%" >
+								<table  width="100%" height="100%" >
+									<tr height="50%">
+										<td align="center">
+											<input type="button" value="JogadorXJogador" onclick="JogadorXJogador()" class="BotaoMenu">
+										</td>
+									</tr>
+									<tr height="50%">
+										<td align="center">
+											<input type="button" value="Reiniciar" onclick="Reiniciar()" class="BotaoMenu">
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td width="33%">
+								<table  width="100%" height="100%" >
+									<tr height="50%">
+										<td align="center">
+											<label id="vitoria" class="vitoria" ></label>
+										</td>
+									</tr>
+									<tr height="50%">
+										<td>
+											<table  width="100%" height="100%">
+												<tr>
+													<td width="50%" class="display">
+														<table>
+															<tr>
+																<td width="30%" class="font" >
+																	<label  class="ponto" id="contadorX">0</label>
+																</td>
+																<td width="70%">
+																	<img src="imagens/x.png" style="width: 25; height: 25; margin-left: 45px;">
+																	
+																</td>
+															</tr>
+														</table>
+														
+													</td>
+													<td width="50%" class="display">
+														<table>
+															<tr>
+																<td>
+																	<img src="imagens/bolinha.png" style="width: 30; height: 30; margin-left: 5px;">
+																</td>
+																<td>
+																	<label  class="ponto" id="contadorO">0</label>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td width="33%">
+								<table  width="100%" height="100%" >
+									<tr height="50%">
+										<td align="center">
+											<input type="button" value="JogadorXComputador" onclick="JogadorXComputador()" class="BotaoMenu">
+										</td>
+									</tr>
+									<tr height="50%">
+										<td align="center">
+											<select class="BotaoMenu" id="comboBox">
+												<option value="facil"> Fácil</option>
+												<option value="Intermediario"> Intermediário</option>
+												<option value="Dificil"> Difícil</option>
+											</select>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table> <!--Fim tabela do menu-->
+				</td>
+			</tr>
+			<tr height="75%">
+				<td width="100%" valign="top">
+					<table width="70%" height="100%" align="center"  >
+						<tr>
+							<td>
+								<table width="100%" height="100%"  cellspacing="10" >
+									<tr height="33%" align="center" class="bordaTR">
+										<td width="33%" class="borda">
+											<img src="imagens/branco.png" width="150" height="150" onclick="marca(id)" id="0"> 
+										</td>
+										<td width="33%" class="borda">
+											<img src="imagens/branco.png" width="150" height="150" onclick="marca(id)" id="1">
+										</td>
+										<td width="33%">
+											<img src="imagens/branco.png" width="150" height="150" onclick="marca(id)" id="2">
+										</td>
+									</tr >
+									<tr  height="33%" align="center" class="bordaTR">
+										<td width="33%" class="borda">
+											<img src="imagens/branco.png" width="150" height="150" onclick="marca(id)" id="3">
+										</td>
+										<td width="33%" class="borda">
+											<img src="imagens/branco.png" width="150" height="150" onclick="marca(id)" id="4">
+										</td>
+										<td width="33%">
+											<img src="imagens/branco.png" width="150" height="150" onclick="marca(id)" id="5">
+										</td>
+									</tr>
+									<tr  height="33%" align="center">
+										<td width="33%" class="borda">
+											<img src="imagens/branco.png" width="150" height="150" onclick="marca(id)" id="6">
+										</td>
+										<td width="33%" class="borda">
+											<img src="imagens/branco.png" width="150" height="150" onclick="marca(id)" id="7">
+										</td>
+										<td width="33%">
+											<img src="imagens/branco.png" width="150" height="150" onclick="marca(id)" id="8">
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

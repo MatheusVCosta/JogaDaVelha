@@ -1,0 +1,65 @@
+body{
+	margin: 0;
+	background-color:#85898c;
+}
+.principal{
+	border:8px solid white;
+	border-radius: 40px;
+}
+#banner{
+	background-color: #1ea8ff;
+	border-radius: 30px;
+}
+.font-Mostrador{
+	font-family: arial; 
+	font-size: 35px;
+	font-weight: bold;
+}
+#font-banner{
+	font-family: impact; 
+	font-size: 35px;
+	text-decoration: underline; 
+	color: black;
+}
+.menu{
+	background-color:#1ea8ff;
+
+}
+.vitoria{
+	font-family: arial;
+	font-weight: bold;
+	font-size: 20px;
+}
+.BotaoMenu{
+	width:80%;
+	height:100%;
+	background :#1ea8ff;
+	color: black;
+	border:3px solid white;
+	border-radius: 10px;
+	alignment-baseline: central;
+	font-family: arial;
+	font-size: 19px;
+}
+.BotaoMenu:hover{
+	background: white;
+	border:3px solid #1ea8ff;
+}
+
+.display{
+	border:3px solid white;
+	border-radius: 7px;
+	
+}
+.ponto{
+	margin-left: 25px; 
+	font-family: impact;  
+	font-size: 25px;
+}
+.bordaTR{
+	box-shadow:  0px 10px white;
+}
+.borda{
+	box-shadow:  10px 0px white;
+}
+
